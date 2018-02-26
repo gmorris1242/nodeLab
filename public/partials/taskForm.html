@@ -1,0 +1,14 @@
+<div class="main">
+
+  <span><a class="backBtn"href="#!/welcome"><i class="material-icons">arrow_backword</i>Go back</a></span>
+
+  <h1>TODO List</h1>
+  <p>A place to store the things you have to do!</p>
+  <form ng-submit="$ctrl.add($ctrl.input)">
+
+      <task-list list="$ctrl.list"></task-list>
+
+    <input type="text" placeholder="Add your to-do" ng-model="$ctrl.input">
+    <button type="submit">Add</button>
+  </form>
+</div>

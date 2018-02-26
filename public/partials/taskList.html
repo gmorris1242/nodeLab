@@ -1,0 +1,4 @@
+<input type="text" placeholder="Filter your to-dos" ng-model="filterText">
+<ol>
+  <li ng-repeat="todo in $ctrl.list | filter: filterText track by $index">{{todo.task}} <span ng-click="$ctrl.removeMe(todo.id)" xhov><i class="material-icons">close</i></span></li>
+</ol>

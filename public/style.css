@@ -1,0 +1,162 @@
+
+* {
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+body {
+  background: linear-gradient(to right, #f857a6, #ff5858);
+}
+
+.main {
+  background-color: white;
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 25px;
+  padding-top: 30px;
+  border-radius: 5px;
+  margin-top: 100px;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  max-width: 500px;
+  min-width: 250px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #ff69b4;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  transition: transform 400ms;
+  /* opacity: 0.5; */
+}
+
+input {
+  width: 100%;
+  border: 2px solid #eee;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+ol {
+  padding-top: 15px;
+  padding-left: 40px;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+ol li {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.main h1 {
+  margin-bottom: 5px;
+}
+
+.main p {
+  margin-bottom: 10px;
+}
+
+ol li span {
+  text-align: right;
+  float: right;
+  padding-right: 10px;
+}
+
+button:hover {
+  background-color: #ff1493;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: transform 400ms;
+}
+
+/* ol li span:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 300ms;
+  color: #ff0000;
+} */
+
+ol li:hover {
+  background-color: #eee;
+}
+
+/* NOTE: Welcome page */
+
+.welcome {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  max-width: 504px;
+  min-width: 250px;
+  margin: 0 auto;
+  margin-top: 200px;
+  width: 45%;
+  padding: 30px 25px;
+}
+
+.enterBtn {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+  transition: transform 400ms;
+}
+
+.test {
+  display: flex;
+  justify-content: flex-end;
+}
+
+a {
+  text-decoration: none;
+  color: #ff69b4;
+  opacity: 0.5;
+}
+
+.backBtn {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: transform 400ms;
+}
+
+.backBtn i {
+  width: 20px;
+}
+
+.backBtn:hover {
+  transform: scale(1.03);
+  transition: transform 400ms;
+  color:#ff1493;
+}
+
+.enterBtn:hover {
+  transform: scale(1.03);
+  transition: transform 400ms;
+  color:#ff1493;
+}
+
+a .material-icons {
+  font-size: 1.2rem;
+}
+
+/* li .material-icons {
+  font-size: 1.1rem;
+} */

@@ -1,6 +1,6 @@
 (function() {
   function TodoService($http){
-    var savedList =[];
+    // var savedList =[];
 
     return {
       getList: getList,
@@ -16,7 +16,7 @@
     };
 
     function setList(input){
-      console.log(savedList);
+      // console.log(savedList);
       return $http({
           method: "POST",
           url: "/tasks",
@@ -29,8 +29,8 @@
         method: "GET",
         url: "/tasks"
       }).then(function(response) {
-        savedList = response.data;
-        console.log(savedList);
+        // savedList = response.data;
+        // console.log(savedList);
         return response.data;
         });
     };

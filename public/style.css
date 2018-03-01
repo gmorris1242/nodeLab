@@ -63,6 +63,25 @@ ol {
 ol li {
   padding: 5px;
   font-size: 1rem;
+  /* list-style-type: lower-latin; */
+}
+
+.flexLi {
+  display: flex;
+  justify-content: space-between;
+}
+
+.listTask {
+  display: inline-block;
+}
+
+.clickers {
+  text-align: right;
+  display: inline-block;
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
 }
 
 .main h1 {
@@ -73,10 +92,9 @@ ol li {
   margin-bottom: 10px;
 }
 
-ol li span {
-  text-align: right;
-  float: right;
-  padding-right: 10px;
+
+li .material-icons {
+  font-size: 1.1rem;
 }
 
 button:hover {
@@ -156,7 +174,3 @@ a {
 a .material-icons {
   font-size: 1.2rem;
 }
-
-/* li .material-icons {
-  font-size: 1.1rem;
-} */

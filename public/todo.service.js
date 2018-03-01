@@ -5,7 +5,17 @@
     return {
       getList: getList,
       setList: setList,
-      deleteList: deleteList
+      deleteList: deleteList,
+      updateTask: updateTask
+    };
+
+    function updateTask(input,itemId){
+      // console.log("click");
+      return $http({
+               method: "PUT",
+               url: "/tasks/" + itemId,
+               data: {task: input}
+           });
     };
 
     function deleteList(itemId){
@@ -34,6 +44,9 @@
         return response.data;
         });
     };
+
+
+
   };
 
   angular.module("app")

@@ -1,12 +1,15 @@
 (function() {
   function TodoService($http){
     // var savedList =[];
+    var id;
 
     return {
       getList: getList,
       setList: setList,
       deleteList: deleteList,
-      updateTask: updateTask
+      updateTask: updateTask,
+      getId: getId,
+      sendId: sendId
     };
 
     function updateTask(input,itemId){
@@ -45,6 +48,15 @@
         });
     };
 
+    function getId(passedId){
+      id = passedId
+      // console.log(id);
+    };
+
+    function sendId(){
+      // console.log(id);
+      return id;
+    };
 
 
   };

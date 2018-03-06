@@ -4,11 +4,11 @@
     <div class="flexLi">
       <div class="listTask">{{todo.task}}</div>
       <div class="clickers">
+        <span ng-click="$ctrl.updateId(todo.id)" xhov>
+          <i class="material-icons">edit</i>
+        </span>
         <span ng-click="$ctrl.removeMe(todo.id)" xhov>
           <i class="material-icons">close</i>
-        </span>
-        <span ng-click="$ctrl.updateListItem('click test',todo.id)" xhov>
-          <i class="material-icons">edit</i>
         </span>
       </div>
     </div>
